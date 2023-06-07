@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            color: white;
+            padding: 32px 0px;
+            margin-bottom: 70px;
+        }
+        li{
+            display: inline;
+            margin-left: 24px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            background-color: white;
+            color: black;
+
+        }
+        section{
+            display: flex;
+            justify-content: space-around;
+        }
+        @media screen and (max-width:800px) {
+            nav{
+                background-color: green;
+                flex-direction: column;
+            }
+            li{
+                display: block;
+                text-align: center;
+                margin-bottom: 20px;
+                background-color: red;
+            }
+            section{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>
+                DAL
+            </h1>
+        </div>
+        <ul>
+            <li>
+                <a href="">HOME</a>
+            </li>
+            <li>
+                <a href="">ABOUT</a>
+            </li>
+            <li>
+                <a href="">SERVICES</a>
+            </li>
+            <li>
+                <a href="">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="divOne">
+        <h2>Chibuzor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Reprehenderit non fugit est ullam earum id. Atque <br> eius saepe exercitationem non, consequuntur provident tenetur cupiditate <br> ea tempore animi. Quisquam, eligendi eveniet.</p>
+        </div>
+        <div class="divTwo">
+            <img src="Xbox.jpg" alt="" width="300px">
+        </div>
+    </section>
+</body>
+</html>
