@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FURNITURE SHOPPING SITE</title><link rel="shortcut icon" href="chair3.jpg" type="image/x-icon">
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        header{
+            display: flex;
+            background-image: url(mainslider.png);
+            height: 550px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+
+        }
+        h3{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            margin-left: 100px;
+        }
+        ul{
+            text-decoration: none;
+            margin-left: 290px;
+            margin-top: 25px;
+
+        }
+        li{
+            display: inline;
+            margin-left: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+        .contact{
+            color: rgb(41, 41, 55);
+            padding: 6px 18px;
+            border-radius: 5px;
+            background-color: white;
+        }
+        h1{
+            position: absolute;
+            top: 70px;
+            left: 330px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 300%;
+        }
+        section{
+            display: flex;
+            background-color: black;
+            color: white;
+            align-items: center;
+            gap: 120px;
+            padding: 50px 0px;
+            padding-bottom: 70px;
+        }
+        main{
+            background-color: rgb(192, 207, 229);
+            /* background-size: 100%; */
+            margin-top: -19px;
+            height: 1600px;
+        }
+        .minicont{
+            display: flex;
+            background-color: rgb(210, 220, 234);
+            border-radius: 5px;
+            border-style: none;
+            padding: 6px 18px;
+            gap: 15px;
+            margin-left: 370px;
+            padding: 10px;
+            width: 490px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        .container2{
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            position: relative;
+            bottom: 60px;
+        }
+        .item{
+            width: 120px;
+            height: 170px;
+            padding-top: 8px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 7px;
+        }
+        img{
+            height: 140px;
+            width: 96px;
+            position: relative;
+            left: 12px;
+
+        }
+        .one{
+            background-color: white;
+        }
+        .two{
+            background-color: white;
+        }
+        .three{
+            background-color: white;
+        }
+        .four{
+            background-color: white;
+        }
+        h5{
+            position: relative;
+            top: -20px;
+            left: 5px;
+        }
+        .more{
+            color: white;
+            padding: 6px 18px;
+            border-radius: 5px;
+            background-color: rgb(41, 41, 55);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 200px;
+        }    
+        .box{
+            display: flex;
+            
+        }
+        .box-one{
+            width: 200px;
+            height: 120px;
+            background-color: rgb(210, 220, 234);
+            position: relative;
+            left: 600px;
+            bottom: 230px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            color: rgb(5, 5, 52);
+            border: 2px solid grey;
+        }
+        .box-two{
+            width: 200px;
+            height: 120px;
+            background-color: rgb(210, 220, 234);
+            position: relative;
+            left: 660px;
+            bottom: 150px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            color: rgb(5, 5, 52);
+            border: 2px solid grey;    
+        }
+        .box-three{
+            width: 200px;
+            height: 120px;
+            background-color: rgb(210, 220, 234);
+            position: relative;
+            left: 140px;
+            bottom: 60px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            color: rgb(5, 5, 52);
+            border: 2px solid grey;
+        }
+        .box-four{
+            width: 200px;
+            height: 120px;
+            background-color: rgb(210, 220, 234);
+            position: relative;
+            left: 200px;
+            bottom: -20px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            color: rgb(5, 5, 52);
+            border: 2px solid grey;
+        }
+        .info{
+            margin-left: 40px;
+            color: white;
+            padding: 6px 18px;
+            border-radius: 5px;
+            background-color: rgb(41, 41, 55);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .box2{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .sofa{
+            width: 900px;
+            height: 450px;
+            margin-left: 150px;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h3>FORTC</h3>
+        </div>
+
+        <div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Product</li>
+                <li>Category</li>
+                <li>Designs</li>
+                <li>Services</li>
+                <li class="contact">Contact Us</li>
+            </ul>
+        </div>
+
+        <h1>Your Best Online Furniture<br>& Interior Design Services</h1>
+    </header>
+
+    <section>
+        <div>
+            <h3>Our Range<br>of Products</h3>
+        </div>
+        <div>
+            <h5 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Home Furniture</h5>
+            <p style="font-size: xx-small;">Lorem ipsum dolor sit amet djgdukkhgdhddjd <br> consectetur adipisicing elit. Reprehenderit eos <br> non fugit ipsam illo quibusdam tempora dolor, <br> eaque quam quisquam laudantium utuititiuutu<br><b>Read More</b>.....</p>
+        </div>
+        <div>
+            <h5 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Office Furniture</h5>
+            <p style="font-size: xx-small;">Lorem ipsum dolor sit amet djgdukkhgdhddjd <br> consectetur adipisicing elit. Reprehenderit eos <br> non fugit ipsam illo quibusdam tempora dolor, <br> eaque quam quisquam laudantium utuititiuutu<br><b>Read More</b>.....</p>
+        </div>
+        <div>
+            <h5 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Service Furniture</h5>
+            <p style="font-size: xx-small;">Lorem ipsum dolor sit amet tempora dolor aut Eum gfudddfhgjkk<br> consectetur adipisicing elit. Reprehenderit eos yyiuuttiu yittui<br> non fugit ipsam illo quibusdam yuyurtyrrukj oiyturyeerutyiit <br> eaque quam quisquam laudantiumhjggkh poiuytuu <br>complicated <b>Read More</b>.....</p>
+        </div>
+    </section>
+
+        <main>
+            <br>
+        <nav>
+            <h3 style="color: black; font-family: Arial, Helvetica, sans-serif; position: relative; left: 420px;">Best Selling Categories</h3>
+        </nav>
+
+        <div class="minicont">
+                <nav style="color: rgb(5, 5, 52); margin-left: 13px;">Table</nav>
+                <nav style="color: rgb(5, 5, 52);">Shelf</nav>
+                <nav style="color: rgb(5, 5, 52);">Dinning</nav>
+                <nav style="color: rgb(5, 5, 52);">Cupboard</nav>
+                <nav style="color: rgb(5, 5, 52);">Desk</nav>
+                <nav style="color: rgb(5, 5, 52);">Wardrobe</nav>
+                <nav style="color: rgb(5, 5, 52);"><u>Chair</u></nav>
+                <nav style="color: rgb(5, 5, 52);">Couch</nav>
+        </div>
+
+        <div class="container2">
+            <aside class="item one">
+                <img src="chair1.jpg" alt="">
+                <h5>Lorem, ipsum. <br><b style="color: gold;">Available</b></h5>
+            </aside>
+            <aside class="item two">
+                <img src="chair2.jpg" alt="">
+                <h5>Lorem, ipsum. <br><b style="color: gold;">Available</b></h5>
+            </aside>
+            <aside class="item three">
+                <img src="chair3.jpg" alt="">
+                <h5>Lorem, ipsum. <br><b style="color: gold;">Available</b></h5>
+            </aside>
+            <aside class="item four">
+                <img src="chair4.jpg" alt="">
+                <h5>Lorem, ipsum. <br><b style="color: gold;">Available</b></h5>
+            </aside>
+        </div>
+
+        <footer>
+            <div>
+                <h3 style="color: rgb(41, 41, 55); margin-left: 200px;">Our Services</h3>
+                <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif; margin-left: 200px; font-size: 90%;">Lorem ipsum dolor sit amet consec <br> tetur adipisicing elit gdfgfhjjghjgjhg ughgt <br> illum eum id sint, consequuntur jhkhk <br> consequatur expedita modi consecteturs<br> facilis quas.</p>
+                <span class="more">More Services</span>
+            </div>
+
+            <div class="box">
+                <div class="box-one">
+                    <h5 style="font-family: Georgia, 'Times New Roman', Times, serif;">Confirm Product <br><br><b style="font-size: 85%;">fgfhghghgg hghggjfjghg <br>ddfggssd ggffghfd hhgjffhg <br>lorem chairs</b></h5>
+                </div>
+
+                <div class="box-two">
+                    <h5 style="font-family: Georgia, 'Times New Roman', Times, serif;">Confirm Product <br><br><b style="font-size: 85%;">fgfhghghgg hghggjfjghg <br>ddfggssd ggffghfd hhgjffhg <br>lorem chairs</b></h5>
+                </div>
+
+                <div class="box-three">
+                    <h5 style="font-family: Georgia, 'Times New Roman', Times, serif;">Confirm Product <br><br><b style="font-size: 85%;">fgfhghghgg hghggjfjghg <br>ddfggssd ggffghfd hhgjffhg <br>lorem chairs</b></h5>
+                </div>
+
+                <div class="box-four">
+                    <h5 style="font-family: Georgia, 'Times New Roman', Times, serif;">Confirm Product <br><br><b style="font-size: 85%;">fgfhghghgg hghggjfjghg <br>ddfggssd ggffghfd hhgjffhg <br>lorem chairs</b></h5>
+                </div>
+            </div>
+        </footer>
+
+        <br><br><br>
+
+        <div class="box2">
+            <div>
+                <h3 style="color: rgb(41, 41, 55);margin-left: 40px;">We Provide You With The<br>Best Experience</h3>
+                <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif; margin-left: 40px; font-size: 90%;">Lorem ipsum dolor sit amet consec khgghl jhhhjljljl gghffsfddsfgghh lorems<br> tetur adipisicing elit gdfgfhjjghjgjhg  illum eum id sint, consequuntur jhkhk <br> consequatur expedita modi consect</p>
+                <span class="info">More Exhibition</span>
+            </div>
+            <div style="margin-top: 40px;">
+                <h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 60%;">YEARS OF<br>EXPERIENCE</h4>
+                <b style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 150%;">10+</b>
+            </div>
+            <div style="margin-top: 40px;">
+                <h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 60%;">AWARDS<br>WON</h4>
+                <b style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 150%;">18+</b>
+            </div>
+            <div style="margin-top: 40px;">
+                <h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 60%;">FURNITURES<br>SOLD</h4>
+                <b style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 150%;">365+</b>
+            </div>
+        </div>
+
+        <div>
+            <img src="chairsofa-removebg-preview.png" alt="" class="sofa">
+        </div>
+
+
+        </main>
+    
+</body>
+</html>
