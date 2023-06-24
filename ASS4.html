@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>CSS HOMEPAGE ANIME/TRANS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container{
+            width: 100%;
+            height: 625px;
+            background-size: 100%;
+            animation-name: container;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes container {
+            0%{
+                background-image: url(mainslider.png);
+            }
+            33.3%{
+                background-image: url(ferrari\ sf90.jpg);
+            }
+            66.7%{
+                background-image: url(yellow\ urus.jpg);
+            }
+            100%{
+                background-image: url(ferrari-roma-sports-8000x6000-10158.jpg);
+            }
+        }
+        .slide-div {
+            width: 40%;
+            position: relative;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            top: 200px;
+            height: 420px;
+            overflow: hidden;
+            /* border: 5px solid white; */
+        }
+        .item-div {
+            color: white;
+            position: absolute;
+            text-align: center;
+            margin-left: 60px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.7rem;
+            font-weight: 700;
+        }
+        button{
+            font-family: Tahoma;
+            font-weight: bold;
+        }
+        .welcome-div {
+            animation-name: slide-one;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes slide-one {
+            0%{
+                margin-top: 0px;
+            }
+            33.3%{
+                margin-top: 1000px;
+            }
+            66.7%{
+                margin-top: 1000px;
+            }
+            100%{
+                margin-top: 0px;
+            }   
+        }
+        .true-div {
+            top: 450px;
+            animation-name: slide-two;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes slide-two {
+            0%{
+                margin-top: 1000px;
+            }
+            33.3%{
+                margin-top: 0px;
+                top: 0px;
+            }
+            66.7%{
+                margin-top: 1000px;
+            }
+            100%{
+                margin-top: 1000px;
+            }
+        }
+        .trial-div {
+            top: 900px;
+            animation-name: slide-three;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes slide-three {
+            0%{
+                margin-top: 1000px;
+            }
+            33.3%{
+                margin-top: 1000px;
+            }
+            66.7%{
+                margin-top: 0px;
+                top: 0px;
+            }
+            100%{
+                margin-top: 1000px;
+            }
+        }
+        button {
+            background-color: blue;
+            color: white;
+            border-radius: 5rem;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="slide-div">
+            <div class="item-div welcome-div">
+                <h2 class="welcome-h2">Welcome To Chibuzor's Page</h2>
+                <button class="welcome-button">Get Started</button>
+            </div>
+            <div class="item-div true-div">
+                <h2 class="true-h2">only those who apply <br>the principles of design <br>are true Designers</h2>
+                <button class="true-button">Get Started</button>
+            </div>
+            <div class="item-div trial-div">
+                <h2 class="trial-h2">A trial will convince you</h2>
+                <button class="trial-button">Get Started</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
