@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEVERAGE E-commerce LANDING PAGE</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            display: flex;
+            height: 607px;
+            align-items: center;
+            justify-content: center;
+            background-image: radial-gradient(at top left, green, orange)
+        }
+        main{
+            background-image: linear-gradient(45deg,red,orange,green);
+            width: 1100px;
+            height: 550px;
+            border-radius: 10px;
+        }
+        ul{
+            display: flex;
+            margin-left: 350px;
+            margin-top: 30px;
+            gap: 40px;
+        }
+        li{
+            display: inline;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+        }
+        aside{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .boxone{
+            margin-bottom: 120px;
+        }
+        .soft{
+            height: 450px;
+            width: 550px;
+        }
+        .boxtwo{
+            margin-top: 40px;
+        }
+        .drinks{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+        .coker, .fantar, .spriter{
+            height: 100px;
+            width: 50px;
+        }
+        h1{
+            font-size: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h3{
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100;
+        }
+        p{
+            font-size: 22px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .decrease{
+            background-color: rgb(23, 23, 77);
+            color: white;
+            width: 26px;
+            height: 26px;
+            border: none;
+            border-radius: 13px;
+            margin-left: 3px;
+        }
+        .increase{
+            background-color: rgb(23, 23, 77);
+            color: white;
+            width: 26px;
+            height: 26px;
+            border: none;
+            border-radius: 13px;
+            margin-left: 15px;
+        }
+        .cart{
+            background-color: rgb(23, 23, 77);
+            height: 12px;
+            width: 12px;
+            padding: 9px 9px;
+            border-radius: 30px;
+            position: relative;
+            right: 15px;
+            bottom: 5px;
+        }
+        h6{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+        .unit{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+            margin-left: 12px;
+        }
+        .buy{
+            background-color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
+            color: white;
+            width: 100px;
+            padding-left: 40px;
+            padding-right: 20px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            border-radius: 15px;
+        }
+        .bag{
+            background-color: rgb(244, 213, 119);
+            height: 10px;
+            width: 10px;
+            padding: 7px 7px;
+            border-radius: 30px;
+            position: relative;
+            right: 105px;
+            top: 8px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <main>
+            <ul>
+                <li>HOME</li>
+                <li>PRODUCT</li>
+                <li>ABOUT</li>
+                <li>SUPPORT</li>
+                <li style="margin-left: 200px;"><img src="search.svg" alt=""></li>
+                <li><img src="cart2.svg" alt="" class="cart"></li>
+             </ul>
+             <aside>
+                <div class="boxone">
+                    <h1>Always <br>Be Your <br>Self</h1>
+                    <h3>Soft Drinks</h3>
+                    <br>
+                    <p>Total Order: <span>$</span><b>12</b><span style="font-weight: 600;">.00</span></p>
+                    <br><br>
+                    <h6>Choose Your</h6>
+                    <br>
+                    <button class="decrease"> < </button> 
+                    <a class="unit"> 2 </a>
+                    <button class="increase"> > </button>
+                    <br><br>
+                    <span class="buy">Buy Now</span>
+                    <img src="bag.svg" alt="" class="bag">
+                </div>
+                <div class="boxtwo">
+                    <img src="soft drinks.png" alt="" class="soft">
+                </div>
+                <div class="drinks">
+                    <img src="coke.png" alt="" class="coker">
+                    <img src="fanta.png" alt="" class="fantar">
+                    <img src="sprite.png" alt="" class="spriter">
+                </div>
+             </aside>
+        </main>
+    </header>
+    
+    <script>
+        let softdrinks = document.querySelector(".soft")
+        let coke = document.querySelector(".coker")
+        let fanta = document.querySelector(".fantar")
+        let sprite = document.querySelector(".spriter")
+        let drinkname = document.querySelector("h3")
+        let price = document.querySelector("b")
+        let units = document.querySelector(".unit")
+        let center = document.querySelector(".boxtwo")
+        let decrease = document.querySelector('.decrease')
+        let increase = document.querySelector('.increase')
+        let count = 1;
+        let amount = 6
+        // let total = (count*amount)
+        // console.log(total)
+
+
+        decrease.disabled=false;
+        increase.disabled=false;
+
+        let items = {
+            images:[
+                "coke.png",
+                "fanta.png",
+                "sprite.png"
+            ]
+        }
+
+
+        coke.addEventListener("click",function change() {
+            count = 1;
+            drinkname.innerHTML = "Coke Drink";
+            price.innerHTML = 6;
+            units.innerHTML = 1
+            softdrinks.src = items.images[0]
+            softdrinks.style.height = "400px";
+            softdrinks.style.width = "200px";
+            softdrinks.style.bottom = "50px";
+            softdrinks.style.position = "relative";
+            decrease.disabled=false;
+            increase.disabled=false;
+        })
+
+        fanta.addEventListener("click",function change() {
+            count = 1;
+            drinkname.innerHTML = "Fanta Drink";
+            price.innerHTML = 6;
+            units.innerHTML = 1
+            softdrinks.src = items.images[1]
+            softdrinks.style.height = "400px";
+            softdrinks.style.width = "200px";
+            softdrinks.style.bottom = "50px";
+            softdrinks.style.position = "relative";
+            decrease.disabled=false;
+            increase.disabled=false;
+        })
+
+        sprite.addEventListener("click",function change() {
+            count = 1;
+            drinkname.innerHTML = "Sprite Drink";
+            price.innerHTML = 6
+            units.innerHTML = 1
+            softdrinks.src = items.images[2]
+            softdrinks.style.height = "400px";
+            softdrinks.style.width = "200px";
+            softdrinks.style.bottom = "50px";
+            softdrinks.style.position = "relative";
+            decrease.disabled=false;
+            increase.disabled=false;
+        })
+
+        decrease.addEventListener('click', function dec () {
+            count--;
+            console.log(count)
+            units.innerHTML=count;
+            price.innerHTML=count * amount;
+            if (count == 1){
+               decrease.disabled=true;
+               increase.disabled=false;
+            }
+            else if (count == 10){
+                decrease.disabled=false;
+                increase.disabled=true;
+            }
+            else if (count < 10){
+                increase.disabled=false;
+                decrease.disabled = false;
+            }
+
+        })
+
+        increase.addEventListener('click', function inc () {
+            count++;
+            console.log(count)
+            units.innerHTML=count;
+            price.innerHTML=count * amount;
+            if (count == 1){
+               decrease.disabled=true;
+               increase.disabled=false;
+            }
+            else if (count == 10){
+                decrease.disabled=false;
+                increase.disabled=true;
+            }
+            else if (count < 10){
+                increase.disabled=false;
+                decrease.disabled = false;
+            }
+        })
+    </script>
+</body>
+</html>
